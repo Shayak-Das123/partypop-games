@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FFFDF7;
+    color: #18181B;
+    user-select: none;
+    -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  h1, h2, h3, .font-fun {
+    font-family: 'Fredoka', 'Plus Jakarta Sans', cursive, sans-serif;
+  }
+}
+
+/* Cute Neobrutalism Utilities */
+.neo-card {
+  background-color: #FFFFFF;
+  border: 3px solid #18181B;
+  border-radius: 1.25rem;
+  box-shadow: 4px 4px 0px #18181B;
+}
+
+.neo-card-lg {
+  background-color: #FFFFFF;
+  border: 4px solid #18181B;
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0px #18181B;
+}
+
+.neo-card-sm {
+  background-color: #FFFFFF;
+  border: 2.5px solid #18181B;
+  border-radius: 0.875rem;
+  box-shadow: 3px 3px 0px #18181B;
+}
+
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  border: 3px solid #18181B;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 0px #18181B;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #18181B;
+}
+
+.neo-btn-sm {
+  border-width: 2.5px;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 0px #18181B;
+}
+
+.neo-btn-sm:active {
+  transform: translate(1.5px, 1.5px);
+  box-shadow: 1.5px 1.5px 0px #18181B;
+}
+
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 2px solid #18181B;
+  border-radius: 9999px;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  box-shadow: 2px 2px 0px #18181B;
+}
+
+/* Animations */
+@keyframes popIn {
+  0% { transform: scale(0.92); opacity: 0; }
+  70% { transform: scale(1.03); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop {
+  animation: popIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.animate-pulse-slow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}

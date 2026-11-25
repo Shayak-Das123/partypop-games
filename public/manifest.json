@@ -1,0 +1,19 @@
+{
+  "name": "PartyPop — Social Games",
+  "short_name": "PartyPop",
+  "description": "Party games for your game night with friends",
+  "start_url": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone", "minimal-ui"],
+  "background_color": "#FFFDF7",
+  "theme_color": "#FFFDF7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
